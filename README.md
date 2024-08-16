@@ -2,7 +2,7 @@
 
 1. Клонируйте репозиторий
   Сначала клонируйте репозиторий с GitHub на свою локальную машину:
-  git clone https://github.com/ваш-аккаунт/ваш-репозиторий.git
+  git clone https://github.com/Zvonarev23/search-repo-app.git
   cd ваш-репозиторий
 
 2. Установите зависимости
