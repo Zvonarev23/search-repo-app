@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+Инструкция по запуску приложения
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Клонируйте репозиторий
+  Сначала клонируйте репозиторий с GitHub на свою локальную машину:
+  git clone https://github.com/ваш-аккаунт/ваш-репозиторий.git
+  cd ваш-репозиторий
 
-## Available Scripts
+2. Установите зависимости
+  npm install или yarn install
 
-In the project directory, you can run:
+3. Создайте личный токен доступа GitHub
+  Для доступа к GitHub API вам понадобится личный токен доступа. Следуйте этим шагам, чтобы создать токен:
 
-### `npm start`
+  - Перейдите на GitHub и войдите в свою учетную запись.
+  - Нажмите на ваш аватар в верхнем правом углу страницы и выберите Settings.
+  - В левой боковой панели выберите Developer settings.
+  - В разделе Personal access tokens выберите Tokens (classic) и нажмите Generate new token.
+  - Укажите название токена, выберите необходимые разрешения (например, repo и read:user), и нажмите Generate token.
+  - Скопируйте токен и сохраните его в надежном месте.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Настройте переменные окружения
+  Создайте файл .env в корне проекта и добавьте туда ваш личный токен доступа. Например:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+REACT_APP_GITHUB_TOKEN=ваш_токен_доступа
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Запустите приложение
+  Выполните одну из следующих команд в зависимости от того, какой пакетный менеджер вы используете:
+  npm start или yarn start

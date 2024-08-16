@@ -1,0 +1,1 @@
+export { RepositoryTable } from './RepositoryTable';
